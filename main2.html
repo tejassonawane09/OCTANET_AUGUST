@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* background-color: white; */
+        background-image: url('bg7.png');
+    }
+    img {
+    width: 1150px; 
+    /* height: auto; */ 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow as needed */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+    }
+
+/* img:hover {
+    opacity: 0.7; 
+}
+img:hover {
+    filter: contrast(200%);
+} */
+img {
+    /* width: 300px; */
+    /* height: auto; */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+img:hover {
+    transform: scale(1.1); /* Scale up the image by 10% on hover */
+}
+
+
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    background-color: bisque;
+}
+.back-button {
+    /* padding: 10px 20px; */
+    padding: 20px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    /* background-color: #0056b3; */
+    background-color: green;
+}
+
+</style>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+<body>
+    <center>
+        <h1>Specifications of Royal Enfield Bullet 350</h1> 
+        <img src="m3.png" alt="">
+        <img src="m6.png" alt="">
+        <img src="m7.png" alt="">
+        <img src="m8.png" alt="">
+        <img src="m9.png" alt="">
+        <img src="m1.png" alt="">
+        <img src="m10.png" alt="">
+    
+    
+    <img src="m2.png" alt="">
+    <hr><br><br>
+    <a href="main.html"><button class="back-button" onclick="goBack()">Go Back</button></a>
+</center>
+</body>
+</html>

@@ -1,0 +1,254 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    position: relative;
+    color: white;
+}
+
+.container img{
+    width: 90px;
+    height: auto;
+    /* padding-left: 25px; */
+}
+.h1{
+    /* padding-right: 50px; */
+    margin-right: 480px;
+}
+
+nav {
+    /* background-color: #222; */
+    background-image: url('headbg1.jpg');
+    padding: 15px 0;
+}
+.container ul :hover {
+    background-color: red; /* Darker green */
+}
+.h1 :hover {
+    background-color: rgb(107, 101, 101); /* Darker green */
+}
+
+
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 60vh; /* Reduced height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn {
+    background-color: #f15a29;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+}
+.btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.gallery {
+    background-color: #f5f5f5;
+}
+marquee{
+    behavior: alternate;
+    position: left;
+    background-image: url('bike5.jpg');
+    background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed;
+}
+
+ /* .slider {
+    position: relative; 
+    overflow: hidden;
+} */
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+} 
+
+
+.slides img {
+    width: 150%;
+    height: 420px;
+}
+.slides img {
+    /* width: 300px; */
+    /* height: auto; */
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.slides img:hover {
+    transform: scale(1.1); /* Scale up the image by 10% on hover */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 100;
+    font-size: 1.5em;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.contact, .about {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: #e0e0e0; */
+    background-image: url('bg1.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; 
+}
+
+.contact .container, .about .container {
+    max-width: 650px;
+    width: 100%;
+}
+
+.contact form {
+    background-color: #a8a3a3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact input, .contact textarea {
+    width: 55%;
+    padding: 15px;
+    border: 1px solid #dad6d6;
+    border-radius: 9px;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.contact input[type="tel"], .contact input[type="text"] {
+    font-family: 'Arial', sans-serif;
+}
+
+.about {
+    background-color: #c6b6b6;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.insta img{
+    width: 70px;
+    height: auto;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: grid; */
+    /* display: block; */
+    padding: 5px;
+    place-items: center;
+    /* position: absolute; */
+    cursor: pointer;
+    display: inline-block;
+   
+}
+.insta{
+    /* background-color: #c6b6b6; */
+    background-image: url('bg2.jpg');
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            background-position: center center; /* Center the image */
+            background-attachment: fixed; 
+    
+   
+}
+.insta img {
+    transition: opacity 0.3s ease;
+}
+.insta img:hover {
+    opacity: 0.7;
+    background-color: brown;
+}
+
